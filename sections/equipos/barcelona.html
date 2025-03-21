@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FC Barcelona - Football Manager - Sergio Gómez & Miquel Avellaneda</title>
+		<link rel="stylesheet" href="../../styles/styles.css">
+		<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Jersey 25' rel='stylesheet'>
+	</head>
+<body>
+	<header class="main-header">
+		<button class="sidebar-btn" onclick="toggleSidebar()">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-baseline-density-medium">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h16" /><path d="M4 12h16" /><path d="M4 4h16" />
+			</svg>
+		</button>
+		<a href="../../index.html">
+			<img src="../../public/logos/LOGO-FM.png" alt="Logo de la lliga Football Manager" class="icon-header">
+		</a>
+		<button class="login-btn">
+			Iniciar Sessió
+		</button>
+	</header>
+	<div class="sidebar" id="sidebar">
+		<div class="div-btn-close">
+			<button class="close-sidebar-btn" onclick="toggleSidebar()">
+				X
+			</button>
+		</div>
+		<div class="sidebar-div">
+			<ul class="sidebar-ul">
+				<li class="sidebar-li"><a class="sidebar-a" href="../../sections/classificacio.html">CLASSIFICACIÓ</a></li>
+				<li class="sidebar-li"><a class="sidebar-a" href="../../sections/calendari.html">CALENDARI</a></li>
+				<li class="sidebar-li submenu-container">
+					<a class="sidebar-a" href="../../sections/equips.html">EQUIPS ></a>
+					<div class="submenu">
+						<ul id="submenu-equipos" class="submenu-ul"></ul>
+					</div>
+				</li>
+				<li class="sidebar-li"><a class="sidebar-a" href="../../sections/info.html">INFO</a></li>
+				<li class="sidebar-li" id="last"><a class="sidebar-a" href="../../sections/gestionarEquip.html">GESTIONAR EQUIP</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main-info">
+		<div class="escudo-nombre">
+			<img src="../../public/escudos/barcelona.png" alt="Escudo FC Barcelona" class="escudo-ficha">
+			<h1 class="nombre-equipo-ficha">FC Barcelona</h1>
+		</div>
+		<div class="datos">
+			<div class="textos-container">
+				<div class="textos">
+					<p>Any fundació:</p>
+					<h3>1899</h3>
+				</div>
+				<div class="textos">
+					<p>Estadi:</p>
+					<h3>Estadi Olímpic Lluís Companys</h3>
+				</div>
+				<div class="textos">
+					<p>President:</p>
+					<h3>Joan Laporta</h3>
+				</div>
+				<div class="textos">
+					<p>Web Oficial:</p>
+					<href href="https://www.fcbarcelona.es">https://www.fcbarcelona.es</href>
+				</div>
+				<div></div>
+				<div class="redes-ficha">
+					<a href="https://www.facebook.com/" target="_blank" class="footer-b">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none"><g clip-path="url(#a)"><path fill="#fff" d="M12.5 29.833C5.417 28.583 0 22.417 0 15 0 6.75 6.75 0 15 0s15 6.75 15 15c0 7.417-5.417 13.583-12.5 14.833l-.833-.666h-3.334l-.833.666Z"/><path fill="#01598D" d="M20.833 19.167 21.5 15h-4v-2.917c0-1.166.417-2.083 2.25-2.083h1.917V6.167c-1.084-.167-2.25-.334-3.334-.334-3.416 0-5.833 2.084-5.833 5.834V15H8.75v4.167h3.75V29.75c.833.167 1.667.25 2.5.25s1.667-.083 2.5-.25V19.167h3.333Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h30v30H0z"/></clipPath></defs></svg>
+					</a>
+					<a href="https://www.instagram.com/" target="_blank" class="footer-b">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none"><g clip-path="url(#a)"><path fill="#fff" d="M15 2.703c4.005 0 4.48.015 6.061.087 1.463.067 2.257.311 2.786.517.7.272 1.2.597 1.724 1.122.525.525.85 1.024 1.122 1.724.206.529.45 1.323.517 2.786.072 1.582.087 2.056.087 6.061s-.015 4.48-.087 6.061c-.067 1.463-.311 2.257-.517 2.786-.272.7-.597 1.2-1.122 1.724a4.645 4.645 0 0 1-1.724 1.122c-.529.206-1.323.45-2.786.517-1.581.072-2.056.087-6.061.087s-4.48-.015-6.061-.087c-1.463-.067-2.257-.311-2.786-.517-.7-.272-1.2-.597-1.724-1.122a4.648 4.648 0 0 1-1.122-1.724c-.206-.529-.45-1.323-.517-2.786-.072-1.581-.087-2.056-.087-6.061s.015-4.48.087-6.061c.067-1.463.311-2.257.517-2.786.272-.7.597-1.2 1.122-1.724a4.648 4.648 0 0 1 1.724-1.122c.529-.206 1.323-.45 2.786-.517 1.581-.072 2.056-.087 6.061-.087ZM15 0c-4.074 0-4.585.017-6.184.09-1.597.073-2.688.327-3.642.697a7.352 7.352 0 0 0-2.656 1.73 7.352 7.352 0 0 0-1.73 2.657C.417 6.13.163 7.22.09 8.816.017 10.416 0 10.926 0 15s.017 4.585.09 6.184c.073 1.597.327 2.688.697 3.642a7.35 7.35 0 0 0 1.73 2.657 7.351 7.351 0 0 0 2.657 1.73c.955.37 2.045.624 3.641.697 1.6.073 2.111.09 6.185.09s4.585-.017 6.184-.09c1.597-.073 2.687-.327 3.642-.698a7.35 7.35 0 0 0 2.656-1.73 7.352 7.352 0 0 0 1.73-2.656c.371-.955.625-2.045.698-3.641.073-1.6.09-2.111.09-6.185s-.017-4.585-.09-6.184c-.073-1.597-.327-2.687-.698-3.641a7.352 7.352 0 0 0-1.73-2.657 7.35 7.35 0 0 0-2.656-1.73C23.87.417 22.78.163 21.184.09 19.584.017 19.075 0 15 0Zm0 7.297a7.703 7.703 0 1 0 0 15.406 7.703 7.703 0 0 0 0-15.406ZM15 20a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm9.807-13.007a1.8 1.8 0 1 1-3.6 0 1.8 1.8 0 0 1 3.6 0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h30v30H0z"/></clipPath></defs></svg>
+					</a>
+					<a href="https://www.x.com/" target="_blank" class="footer-b">
+						<svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" fill="none"><path fill="#fff" d="M18.45 12.703 29.99 0h-2.735l-10.02 11.03L9.23 0H0l12.103 16.679L0 30h2.735l10.582-11.648L21.769 30H31L18.448 12.703h.001Zm-3.747 4.123-1.226-1.66L3.72 1.95h4.2l7.875 10.665 1.226 1.66L27.256 28.14h-4.2l-8.353-11.312v-.001Z"/></svg>
+					</a>
+				</div>
+			</div>
+			<div class="estadi-container">
+				<img src="../../public/estadis/fcbarcelona.png" alt="Estadi FC Barcelona" class="estadi-ficha">
+				<svg width="25%" height="25%" viewBox="0 0 64 64" fill="#ffa500" xmlns="http://www.w3.org/2000/svg" class="svg-logo">
+					<path d="M2.91 25.173 20.332 0h16.854L15.497 30.861h14.08L7.675 42.026l-4.41-5.618C1.701 34.346.99 32.782.99 30.648c0-1.92.712-3.77 1.92-5.475zM17.203 51.2c0-1.778.712-3.698 1.99-5.547L51.265 0h18.56L33.841 51.2h16.213L24.882 64l-5.405-6.897c-1.493-1.92-2.275-3.84-2.275-5.902l.001-.002z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div>
+		<h1 class="title-equip">PLANTILLA DE L’EQUIP 2024/25</h1>
+		<div class="cos-tecnic">
+			<div class="title-position-container">
+				<h2 class="title-position">Cos tècnic</h2>
+				<div class="line"></div>
+			</div>
+			<div class="card-entrenadores" id="cards-entrenadores">
+				<div class="card-entrenador">
+					<div class="card-info-entrenador">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-entrenador">
+					<div class="card-info-entrenador">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cos-tecnic">
+			<div class="title-position-container">
+				<h2 class="title-position">Cos tècnic</h2>
+				<div class="line"></div>
+			</div>
+			<div class="card-jugadores" id="cards-jugadores">
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="dorsal">
+							<h5>1</h5>
+						</div>
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="dorsal">
+							<h5>1</h5>
+						</div>
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="dorsal">
+							<h5>1</h5>
+						</div>
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="dorsal">
+							<h5>1</h5>
+						</div>
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cos-tecnic">
+			<div class="title-position-container">
+				<h2 class="title-position">Cos tècnic</h2>
+				<div class="line"></div>
+			</div>
+			<div class="card-jugadores">
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cos-tecnic">
+			<div class="title-position-container">
+				<h2 class="title-position">Cos tècnic</h2>
+				<div class="line"></div>
+			</div>
+			<div class="card-jugadores">
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cos-tecnic">
+			<div class="title-position-container">
+				<h2 class="title-position">Cos tècnic</h2>
+				<div class="line"></div>
+			</div>
+			<div class="card-jugadores">
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="dorsal">
+							<h5>1</h5>
+						</div>
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cos-tecnic">
+			<div class="title-position-container">
+				<h2 class="title-position">Cos tècnic</h2>
+				<div class="line"></div>
+			</div>
+			<div class="card-jugadores">
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cos-tecnic">
+			<div class="title-position-container">
+				<h2 class="title-position">Cos tècnic</h2>
+				<div class="line"></div>
+			</div>
+			<div class="card-jugadores">
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+				<div class="card-jugador">
+					<div class="card-info">
+						<div class="nombre-equipo">
+							<h3>Hansi Flick</h3>
+							<div class="escudo-pais">
+								<img src="../../public/escudos/barcelona.png" alt="Escudo Barcelona">
+								<p>FC Barcelona</p>
+							</div>
+						</div>
+						<div class="nombre-equipo">
+							<h4>Entrenador</h4>
+							<div class="escudo-pais-2">
+								<img src="../../public/flags/de.svg" alt="" class="bandera">
+								<h4>Alemanya</h4>
+							</div>
+						</div>
+					</div>
+					<div class="foto-jugador">
+						<img src="../../public/jugadors/barcelona/hansi-flik.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	<footer class="main-footer">
+        <div class="footer-container">
+            <div class="logo-text">
+                <a href="./index.html">
+                    <img src="../../public/logos/FM-Logo.png" alt="Logo de Football Manager" alt srcset>
+                </a>
+            </div>
+            <div class="patrocinadors">
+                <div class="patrocinadors-text">
+                    <p>Patrocinadors:</p>
+                </div>
+                <div class="patrocinadors-logos">
+                <a href="https://laliga.es/" target="_blank" class="footer-a">
+                    <img src="../../public/logos/laliga-logo.png" alt srcset>
+                </a>
+                <a href="https://www.nike.com/es/" target="_blank" class="footer-a">
+                    <img src="../../public/logos/nike-logo.png" alt srcset>
+                </a>
+                <a href="https://www.adidas.com/" target="_blank" class="footer-a">
+                    <img src="../../public/logos/adidas-logo.png" alt srcset>
+                </a>
+                <a href="https://www.figma.com/proto/WQ5bmdXc8OqoKgz19sMK7i/Modelo-A-Págiana-Web-Proyecto?node-id=0-1&p=f&t=UTbzSGZpNyai0mue-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" class="footer-a">
+                    <img src="../../public/logos/ceppet-logo.png" alt srcset>
+                </a>
+                <a href="https://www.figma.com/proto/AQNfwvNvkDZM6IL7bIy0Jk/(VERSI%C3%93N_B)-SERGIO-G%C3%93MEZ-LUQUE's-WEB-PROTECTORA-(Copy)?node-id=3312-7&t=ImqkM47iWSEEatwd-1" target="_blank" class="footer-a">
+                    <img src="../../public/logos/cepvet-logo.png" alt srcset>
+                </a>
+                <a href="https://www.panini.es/" target="_blank" class="footer-c">
+                    <img src="../../public/logos/panini-logo.png" alt srcset>
+                </a>
+                </div>
+            </div>
+            <div class="xarxes">
+                <a href="https://play.google.com/store" target="_blank" class="footer-b">
+                    <img src="../../public/logos/Google-Play-Logo.png" alt srcset>
+                </a>
+                <a href="https://www.apple.com/es/app-store/" target="_blank" class="footer-b">
+                    <img src="../../public/logos/Apple-Store-Logo.png" alt srcset>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="footer-b">
+                <img src="../../public/logos/Facebook-Logo.png" alt srcset>
+                    </a>
+                <a href="https://www.instagram.com/" target="_blank" class="footer-b">
+                    <img src="../../public/logos/Instagram_Logo.png" alt srcset>
+                </a>
+                <a href="https://www.x.com/" target="_blank" class="footer-b">
+                    <img src="../../public/logos/X-Logo.png" alt srcset>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="footer-b">
+                    <img src="../../public/logos/Youtube-Logo.png" alt srcset>
+                </a>
+            </div>
+            <div class="links-container">
+                <div class="footer-links">
+                    <a href="../sections/classificacio.html">CLASSIFICACIÓ</a>
+                    <a href="../sections/equips.html">EQUIPS</a>
+                    <a href="../sections/calendari.html">CALENDARI</a>
+                    <a href="../sections/info.html">INFO</a>
+                    <a href="../sections/formulari.html">GESTIONAR EQUIP</a>
+                </div>
+                <div class="legales">
+                    <a>Politica de Privacidad</a>
+                    <a>Aviso Legal</a>
+                    <a>Politica de Cookies</a>
+                    <a>© 2025 Football Manager™. All Rights Reserved.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script src="../../scripts/scripts.js"></script>
+</body>
+</html>
