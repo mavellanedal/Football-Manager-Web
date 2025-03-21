@@ -621,6 +621,16 @@ tr:nth-child(odd) {
 	text-decoration: none;
 }
 
+.textos a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.textos a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
 .redes-ficha a {
 	text-decoration: none;
 }

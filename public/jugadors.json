@@ -109,18 +109,23 @@
 				"bandera": "../../public/banderes/es.svg"
 			}
 		],
-		"entrenador": {
-			"foto": "../../public/jugadors/barcelona/hansi-flik.png",
-			"nomPersona": "Hansi Flick",
-			"pais": "Alemania",
-			"bandera": "../../public/banderes/de.svg"
-		},
-		"segonEntrenador": {
-			"foto": "../../public/jugadors/barcelona/marcus-ros.png",
-			"nomPersona": "Markus Sorg",
-			"pais": "Alemania",
-			"bandera": "../../public/banderes/de.svg"
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "../../public/jugadors/barcelona/hansi-flik.png",
+				"nomPersona": "Hansi Flick",
+				"pais": "Alemania",
+				"bandera": "../../public/banderes/de.svg"
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "../../public/jugadors/barcelona/hansi-flik.png",
+				"nomPersona": "Hansi Flick",
+				"pais": "Alemania",
+				"bandera": "../../public/banderes/de.svg"
+			}
+
+		]
 	},
 	{
 		"equip": "Real Madrid CF",
@@ -232,18 +237,23 @@
 				"bandera": "../../public/banderes/es.svg"
 			}
 		],
-		"entrenador": {
-			"foto": "../../public/entrenadors/carlo_ancelotti.png",
-			"nomPersona": "Carlo Ancelotti",
-			"pais": "Itàlia",
-			"bandera": "../../public/banderes/it.png"
-		},
-		"segonEntrenador": {
-			"foto": "../../public/entrenadors/davide.png",
-			"nomPersona": "Davide Ancelotti",
-			"pais": "Itàlia",
-			"bandera": "../../public/banderes/it.png"
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "../../public/entrenadors/carlo_ancelotti.png",
+				"nomPersona": "Carlo Ancelotti",
+				"pais": "Itàlia",
+				"bandera": "../../public/banderes/it.png"
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "../../public/entrenadors/carlo_ancelotti.png",
+				"nomPersona": "Carlo Ancelotti",
+				"pais": "Itàlia",
+				"bandera": "../../public/banderes/it.png"
+			}
+
+		]
 	},
 	{
 		"equip": "Atlético de Madrid",
@@ -331,18 +341,23 @@
 				"nomPersona": "Axel Witsel"
 			}
 		],
-		"entrenador": {
-			"foto": "../../public/entrenadors/diego_simeone.png",
-			"nomPersona": "Diego Pablo Simeone",
-			"pais": "Argentina",
-			"bandera": "../../public/banderes/argentina.png"
-		},
-		"segonEntrenador": {
-			"foto": "../../public/entrenadors/nelson_vivas.png",
-			"nomPersona": "Nelson Vivas",
-			"pais": "Argentina",
-			"bandera": "../../public/banderes/argentina.png"
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "../../public/entrenadors/diego_simeone.png",
+				"nomPersona": "Diego Pablo Simeone",
+				"pais": "Argentina",
+				"bandera": "../../public/banderes/argentina.png"
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "../../public/entrenadors/diego_simeone.png",
+				"nomPersona": "Diego Pablo Simeone",
+				"pais": "Argentina",
+				"bandera": "../../public/banderes/argentina.png"
+			}
+
+		]
 	},
 	{
 		"equip": "Sevilla FC",
@@ -430,18 +445,23 @@
 				"nomPersona": "Marko Dmitrović"
 			}
 		],
-		"entrenador": {
-			"foto": "../../public/entrenadors/garcia_pimienta.png",
-			"nomPersona": "Xavi García Pimienta",
-			"pais": "España",
-			"bandera": "../../public/banderes/espana.png"
-		},
-		"segonEntrenador": {
-			"foto": "../../public/entrenadors/alex_garcia.png",
-			"nomPersona": "Álex García",
-			"pais": "España",
-			"bandera": "../../public/banderes/espana.png"
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "../../public/entrenadors/garcia_pimienta.png",
+				"nomPersona": "Xavi García Pimienta",
+				"pais": "España",
+				"bandera": "../../public/banderes/espana.png"
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "../../public/entrenadors/garcia_pimienta.png",
+				"nomPersona": "Xavi García Pimienta",
+				"pais": "España",
+				"bandera": "../../public/banderes/espana.png"
+			}
+
+		]
 	},
 	{
 		"equip": "Real Sociedad",
@@ -487,24 +507,29 @@
 				"nomPersona": "Sheraldo Becker"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Imanol Alguacil",
-			"pais": "España",
-			"bandera": "../../public/banderas/espana.png"
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Mikel Labaka",
-			"pais": "Alemania",
-			"bandera": "../../public/banderas/alemania.png"
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Imanol Alguacil",
+				"pais": "España",
+				"bandera": "../../public/banderas/espana.png"
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Imanol Alguacil",
+				"pais": "España",
+				"bandera": "../../public/banderas/espana.png"
+			}
+
+		]
 	},
 	{
 		"equip": "Real Betis",
 		"escut": "../../public/escudos/betis.png",
 		"arxiu": "sections/equips/betis.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -544,24 +569,29 @@
 				"nomPersona": "Ricardo Rodríguez"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Manuel Pellegrini",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Manuel Pellegrini",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Manuel Pellegrini",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "Athletic Club",
 		"escut": "../../public/escudos/athletic.png",
 		"arxiu": "sections/equips/athletic-club.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -601,24 +631,29 @@
 				"nomPersona": "Nico Williams"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Ernesto Valverde",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Ernesto Valverde",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Ernesto Valverde",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "Villarreal CF",
 		"escut": "../../public/escudos/villarreal.png",
 		"arxiu": "sections/equips/villarreal.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -658,24 +693,29 @@
 				"nomPersona": "Dani Parejo"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Marcelino García Toral",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Marcelino García Toral",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Marcelino García Toral",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "Valencia CF",
 		"escut": "../../public/escudos/valencia.png",
 		"arxiu": "sections/equips/valencia.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -715,24 +755,29 @@
 				"nomPersona": "Giorgi Mamardashvili"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Rubén Baraja",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Rubén Baraja",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Rubén Baraja",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "RC Celta de Vigo",
 		"escut": "../../public/escudos/celta.png",
 		"arxiu": "sections/equips/celta.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -772,24 +817,29 @@
 				"nomPersona": "Ilaix Moriba"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Claudio Giráldez",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Claudio Giráldez",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Claudio Giráldez",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "RCD Mallorca",
 		"escut": "../../public/escudos/mallorca.png",
 		"arxiu": "sections/equips/mallorca.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -829,24 +879,29 @@
 				"nomPersona": "Abdón Prats"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Jagoba Arrasate",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Jagoba Arrasate",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Jagoba Arrasate",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "Girona FC",
 		"escut": "../../public/escudos/girona.png",
 		"arxiu": "sections/equips/girona.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -886,24 +941,29 @@
 				"nomPersona": "Daley Blind"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Míchel Sánchez",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Míchel Sánchez",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Míchel Sánchez",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "CA Osasuna",
 		"escut": "../../public/escudos/osasuna.png",
 		"arxiu": "sections/equips/osasuna.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -943,24 +1003,29 @@
 				"nomPersona": "Juan Cruz"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Vicente Moreno",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Vicente Moreno",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Vicente Moreno",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "Getafe CF",
 		"escut": "../../public/escudos/getafe.png",
 		"arxiu": "sections/equips/getafe.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -1000,24 +1065,29 @@
 				"nomPersona": "Álex Sola"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "José Bordalás",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "José Bordalás",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "José Bordalás",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "UD Las Palmas",
 		"escut": "../../public/escudos/las-palmas.png",
 		"arxiu": "sections/equips/las-palmas.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -1057,24 +1127,29 @@
 				"nomPersona": "Jaime Mata"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Luis Carrión",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Luis Carrión",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Luis Carrión",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "RCD Espanyol",
 		"escut": "../../public/escudos/espanyol.png",
 		"arxiu": "sections/equips/espanyol.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -1114,24 +1189,29 @@
 				"nomPersona": "Leandro Cabrera"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Manolo González",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Manolo González",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Manolo González",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "CD Leganés",
 		"escut": "../../public/escudos/leganes.png",
 		"arxiu": "sections/equips/leganes.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -1171,24 +1251,29 @@
 				"nomPersona": "Marko Dmitrovic"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Borja Jiménez",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Borja Jiménez",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Borja Jiménez",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "Real Valladolid CF",
 		"escut": "../../public/escudos/valladolid.png",
 		"arxiu": "sections/equips/valladolid.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -1228,24 +1313,29 @@
 				"nomPersona": "Marcos André"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Paulo Pezzolano",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Paulo Pezzolano",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Paulo Pezzolano",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "Rayo Vallecano",
 		"escut": "../../public/escudos/rayo.png",
 		"arxiu": "sections/equips/rayo.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -1285,24 +1375,29 @@
 				"nomPersona": "Augusto Batalla"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Francisco Rodríguez",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Francisco Rodríguez",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Francisco Rodríguez",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	},
 	{
 		"equip": "Deportivo Alavés",
 		"escut": "../../public/escudos/alaves.png",
 		"arxiu": "sections/equips/alaves.html",
-		"any": ,
+		"any": 1900,
 		"president": "",
 		"estadi": "",
 		"estadiImage": "",
@@ -1342,17 +1437,22 @@
 				"nomPersona": "Kike García"
 			}
 		],
-		"entrenador": {
-			"foto": "",
-			"nomPersona": "Luis García Plaza",
-			"pais": "",
-			"bandera": ""
-		},
-		"segonEntrenador": {
-			"foto": "",
-			"nomPersona": "Hansi Flick",
-			"pais": "",
-			"bandera": ""
-		}
+		"entrenadors": [
+			{
+				"rangoEntrenador": "Entrenador",
+				"foto": "",
+				"nomPersona": "Luis García Plaza",
+				"pais": "",
+				"bandera": ""
+			},
+			{
+				"rangoEntrenador": "Segon Entrenador",
+				"foto": "",
+				"nomPersona": "Luis García Plaza",
+				"pais": "",
+				"bandera": ""
+			}
+
+		]
 	}
 ]
