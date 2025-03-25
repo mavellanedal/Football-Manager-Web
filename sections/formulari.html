@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Football Manager - Sergio Gómez & Miquel Avellaneda</title>
-	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="../styles/styles.css">
 	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
@@ -37,13 +37,18 @@
 					</div>
 				</li>
 				<li class="sidebar-li"><a class="sidebar-a" href="sections/info.html">INFO</a></li>
-				<li class="sidebar-li" id="last"><a class="sidebar-a" href="sections/gestionarEquip.html">GESTIONAR EQUIP</a></li>
+				<li class="sidebar-li" id="last"><a class="sidebar-a" href="sections/formulari.html">GESTIONAR EQUIP</a></li>
 			</ul>
 		</div>
 	</div>
 	<div class="formulari-container">
-		<form>
-			<h1>FORMULARI JUGADOR/ENTRENADOR</h1>
+        <h1>FORMULARI<br>JUGADOR/ENTRENADOR</h1>
+        <div class="formulari-image-upload">
+			<img src="https://via.placeholder.com/200" alt="Avatar">
+			<br><br>
+			<input type="file" id="imatge" name="imatge" accept="image/*">
+		</div>
+		<form class="form">
 			<label for="nom">Nom <span class="formulari-obligatori">*</span></label>
 			<input type="text" id="nom" name="nom" placeholder="Ex: Lionel" required><br><br>
 
@@ -101,15 +106,8 @@
 				<label for="pes">Pes (kg) <span class="formulari-obligatori">*</span></label>
 				<input type="text" id="pes" name="pes" placeholder="Ex: 75" required><br><br>
 			</div>
-
 			<button type="submit">Enviar</button>
 		</form>
-
-		<div class="formulari-image-upload">
-			<img src="https://via.placeholder.com/200" alt="Avatar">
-			<br><br>
-			<input type="file" id="imatge" name="imatge" accept="image/*">
-		</div>
 	</div>
 	<footer class="main-footer">
 		<div class="footer-container">

@@ -1,14 +1,3 @@
-
-function mostrarCamposExtras() {
-	var tipus = document.getElementById("tipus").value;
-	var extraFields = document.getElementById("jugadorFields");
-	if (tipus === "Jugador") {
-		extraFields.classList.remove("ocult");
-	} else {
-		extraFields.classList.add("ocult");
-	}
-}
-
 fetch('../public/jugadors.json')
 .then(response => response.json())
 .then(data => {
