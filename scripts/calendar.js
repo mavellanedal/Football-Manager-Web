@@ -8,15 +8,11 @@ const months = ["GENER", "FEBRER", "MARÇ", "ABRIL", "MAIG", "JUNY", "JULIOL", "
 	function renderCalendar() {
 		document.getElementById("month").innerText = months[currentMonth];
 		document.getElementById("year").innerText = year;
-
-		// Obtener el número de días del mes
 		let days = daysInMonth[0][currentMonth];
 
-		// Crear el calendario
 		let calendar = document.getElementById("calendar");
 		calendar.innerHTML = "";
 
-		// Cabecera de días de la semana
 		const weekDays = ["DILLUNS", "DIMARTS", "DIMECRES", "DIJOUS", "DIVENDRES", "DISSABTE", "DIUMENGE"];
 		let ol = document.createElement("ol");
 		weekDays.forEach(day => {
@@ -73,12 +69,15 @@ const months = ["GENER", "FEBRER", "MARÇ", "ABRIL", "MAIG", "JUNY", "JULIOL", "
 				} else if (day <= days) {
 					// Mostrar los días del mes actual
 					let li = document.createElement("li");
-					const month = new Date().getMonth();
-					const currenteDay = new Date().getDay();
-					if (currentMonth + 1 ===  month && day === currenteDay)
+					const today = new Date();
+					const todayDay = today.getDate();
+					const todayMonth = today.getMonth();
+
+					if (currentMonth === todayMonth && day === todayDay) {
 						li.classList.add("current-day");
-					else
+					} else {
 						li.classList.add("day");
+					}
 					li.innerHTML = `<div><p>${day}</p></div>`;
 
 					// Verificar si el día está entre el 1 de enero y el 25 de mayo
