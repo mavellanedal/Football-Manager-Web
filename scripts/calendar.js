@@ -64,7 +64,6 @@ const months = ["GENER", "FEBRER", "MARÇ", "ABRIL", "MAIG", "JUNY", "JULIOL", "
 							li.appendChild(badge);
 						}
 					}
-
 					ol.appendChild(li);
 				} else if (day <= days) {
 					// Mostrar los días del mes actual
